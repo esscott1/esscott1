@@ -32,3 +32,7 @@ A working simulator that also serves as a reference implementation of an AI-driv
 - **MCP through a Claude Code Skill.** A custom skill uses the Atlassian MCP server to link each commit and its Jira issue in both directions and move the issue through its workflow.
 - **Specialized review subagents.** Code-review and structure-review subagents run with read-only tools. One of their checks is model right-sizing: whether each AI call uses the cheapest model tier that can do the job reliably.
 - **Tested engine, automated deployment.** A .NET simulation engine with unit tests is deployed to Azure App Service through a path-filtered GitHub Actions pipeline.
+
+---
+
+Open to Enterprise Architect and AI enablement roles. The best way to reach me is [LinkedIn](https://www.linkedin.com/in/ericscott411itleadership/).
