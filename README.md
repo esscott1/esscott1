@@ -35,4 +35,20 @@ A working simulator that also serves as a reference implementation of an AI-driv
 
 ---
 
+## What working with me looks like
+
+I help teams make the architecture decisions that decide whether AI holds up in production, and I show the trade-offs rather than just recommending a tool. [ClaudeCowork](https://github.com/esscott1/ClaudeCowork) builds the same workflow two ways, as managed Claude skills and as an owned LangGraph pipeline, to make those trade-offs concrete.
+
+- **The right amount of autonomy.** Deterministic orchestration first, with model control only where it pays for itself, and the choice written down in an [architecture decision record](https://github.com/esscott1/ClaudeCowork/blob/main/docs/adr/0001-orchestration-approach.md).
+- **Managed vs. owned.** When a managed platform is enough, and when owning the integrations is worth the operating cost.
+- **No framework lock-in.** Business rules, prompts and integrations sit outside the orchestration framework, and a CI test enforces that boundary.
+- **Reliability where agents actually fail.** Retries, schema-validated model output, resumable checkpoints, and failures handled as states rather than crashes.
+- **Guardrails in code, with people in the loop.** Rules the model can't override, and approval points that pause and resume cheaply.
+- **Least privilege by default.** Read-only scopes, no personal data in repos, and no credentials handed to AI tools just for convenience.
+- **Migration without downtime.** Run the new system in shadow beside the old one and cut over a component at a time.
+
+The full list, with each point linked to the code that shows it: [AI enablement playbook](ai-enablement-playbook.md).
+
+---
+
 Open to Enterprise Architect and AI enablement roles. The best way to reach me is [LinkedIn](https://www.linkedin.com/in/ericscott411itleadership/).
